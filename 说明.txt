@@ -1,0 +1,6 @@
+discord-test-4.rar 是第一版调通流程的项目，内嵌一个unity发布的3d webgl项目，可以在discord里面的activity显示。
+用到了一下内容
+vite-vue
+unity-webgl
+@discord/embedded-app-sdk
+cloudflared tunnel
