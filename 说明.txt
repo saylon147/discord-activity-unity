@@ -4,3 +4,10 @@ vite-vue
 unity-webgl
 @discord/embedded-app-sdk
 cloudflared tunnel
+
+
+再记录一下流程，以免将来忘记
+1. 运行.\cloudflared-windows-amd64.exe tunnel --url http://localhost:5173，开启内网穿透，把输出信息里面类似这样的：https://enemy-electoral-tenant-differ.trycloudflare.com 复制出来，分别修改两个文件：main.js 和 vite.config.js 具体怎么改看一下就明白。另外还要修改discord后台页面的app的 URL Mapping。
+2. 再运行npm run dev，把游戏跑起来。
+3. 命令行模式下启动discord，方便看日志 C:\Users\9you\AppData\Local\Discord\app-1.0.9182> .\Discord.exe --no-sandbox --remote-debugging-port=9222
+4. discord的客户端，进一个语音频道，然后打开activity。
