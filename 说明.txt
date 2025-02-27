@@ -11,3 +11,5 @@ cloudflared tunnel
 2. 再运行npm run dev，把游戏跑起来。
 3. 命令行模式下启动discord，方便看日志 C:\Users\9you\AppData\Local\Discord\app-1.0.9182> .\Discord.exe --no-sandbox --remote-debugging-port=9222
 4. discord的客户端，进一个语音频道，然后打开activity。
+
+把discord-test-4项目上传后，rar不再更新。
