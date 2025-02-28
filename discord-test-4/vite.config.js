@@ -5,7 +5,7 @@ export default defineConfig({
   plugins: [vue()],
   server: {
     allowedHosts: [
-      'period-brown-values-geographical.trycloudflare.com'
-    ],
+      'danger-led-dvds-rod.trycloudflare.com'
+    ]
   }
 })

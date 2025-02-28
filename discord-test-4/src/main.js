@@ -3,7 +3,7 @@ import './style.css'
 import App from './App.vue'
 
 // Import the SDK
-import { DiscordSDK } from "@discord/embedded-app-sdk";
+import { DiscordSDK, Common } from "@discord/embedded-app-sdk";
 import { patchUrlMappings } from '@discord/embedded-app-sdk';
 
 // Instantiate the SDK
@@ -15,10 +15,11 @@ setupDiscordSdk().then(() => {
 
 async function setupDiscordSdk() {
     await discordSdk.ready();
+    discordSdk.commands.setOrientationLockState({ lock_state: Common.OrientationLockState.PORTRAIT });
 }
 
 async function setApp() {
-    patchUrlMappings([{ prefix: '/Build', target: 'https://period-brown-values-geographical.trycloudflare.com/Build' }]);
+    patchUrlMappings([{ prefix: '/Build', target: 'https://danger-led-dvds-rod.trycloudflare.com/Build' }]);
 }
 
 setApp();
